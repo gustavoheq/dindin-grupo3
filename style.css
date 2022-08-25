@@ -1,0 +1,597 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Ubuntu', sans-serif;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #2E948A;
+    box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.25);
+    padding: 4vh
+}
+a{
+    cursor: pointer;
+    text-decoration: none;
+}
+.item-menu{
+    display:none;
+}
+.logo{
+    max-width: 244px;
+}
+.nav-header{ 
+    display: flex;
+    gap: 2vw;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.item-nav{
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+}
+/*****************************************/
+.inicio{
+    display: flex;
+    padding: 20vh 15vw;
+    justify-content: space-between;
+}
+.inicio-info{
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    width:30vw;
+}
+.inicio img{
+    width: 40%;
+    max-width: 500px;
+}
+.inicio-titulo{
+    display: flex;
+    flex-direction: column;
+}
+.inicio-titulo p{
+    color: #FF4081;
+    font-size:60px;
+    font-weight: 700;
+}
+.inicio-texto-modal{
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+}
+.inicio-texto-modal p{
+    color:#555555;
+    font-size: 27px;
+}
+.saber-mais{
+    width:65%;
+    border-radius: 62px;
+    padding: 1vh;
+    border: 1px solid #FF4081;
+    color: #FF4081;
+    font-size: 27px;
+    text-align: center;
+    font-family:'Ubuntu', sans-serif;
+}
+.saber-mais:hover{
+    color: #fff;
+    background-color: #FF4081;
+    transition: 300ms;
+}
+
+.modal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity:0;
+    height: 100vh;
+    width:100%;
+    background: rgba(0,0,0,0.8);
+    z-index: 99999;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+  }
+  .modal-container:target {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .modal{
+    width: 80%;
+    position: relative;
+    margin: 5% auto;
+    padding: 5vh 1vw;
+    background: #fff;
+    display:flex;
+    border-radius:5px;
+    flex-direction: column;
+  }
+  .modal-info{
+    display: flex;
+    align-items:center;
+    gap: 5vw;
+    justify-content: space-between;
+    padding: 1% 5vw;
+  }
+  .modal-info img{
+    width: 30vw
+  }
+  .modal-texto{
+    display:flex;
+    flex-direction:column;
+    gap: 3vh;
+    width: 40vw;
+  }
+  .modal-texto h2{
+    color:#FF4081;
+    font-size:35px;
+    font-weight: 700;
+  }
+  .modal-texto p{
+    font-size: 18px;
+    font-weight: 300;
+    width: 75%;
+  }
+  .modal-texto li{
+    font-size: 18px;
+    font-weight: 300;
+    margin: 1vw;
+  }
+  .link-para-aulas{
+    background-color: #C4C4C4;
+    border-radius: 79px;
+    width:35%;
+    text-align: center;
+    padding: 2vh;
+    font-family:'Ubuntu', sans-serif;
+    color: #000;
+    font-size: 18px;
+  }
+
+  .fechar {
+    width: 30px;
+    align-self: flex-end;
+    border-radius: 30px;
+    border: 1px solid #000000;
+    font-size: 26px;
+    text-align: center;
+  }
+/********************************************************/
+.cursos{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    background-color: #F6F6F6;
+    padding: 15vh 10vw;
+}
+.curso{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3vh;
+    max-width:344px;
+    max-height:504px;
+}
+.curso img{
+    height:270px;
+    padding-bottom: 3vh;
+}
+
+.img-poupando{
+    width: 288px;
+}
+.img-investimento{
+    width:238px;
+}
+.img-independencia{
+    width:187px;
+}
+.curso h2{
+    color: #FF4081;
+    font-weight: 700;
+    font-size: 25px;
+    text-align:center;
+}
+.curso p{
+    font-size: 17px;
+    font-weight: 300;
+    text-align: center;
+    width: 84%;
+}
+.ir-para-cursos{
+    background-color: #FF4081;
+    color: #fff;
+    border-radius: 62px;
+    border: 2px solid #FFf;
+    padding: 4% 13%;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px ;
+    font-weight: 400;
+}
+.ir-para-cursos:hover{
+    background-color: #FFf;
+    color: #FF4081;
+    border: 2px solid #FF4081;
+}
+
+/*******************************************************/
+.depoimentos{
+    padding: 14vh 6vw;
+    display:flex;
+    flex-direction:column;
+    gap: 3vh;
+}
+.depoimentos h3{
+    color:#2E948A;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 37px;
+    padding-bottom: 8vh;
+}
+.grid-depoimentos{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 10vh;
+    column-gap: 10vw;
+}
+.item-depoimento{
+    display: flex;
+    gap: 2vw;
+    align-items: center;
+    justify-content: center;
+}
+.depoimento-info{
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+.depoimento{
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 25px;
+    width:95%;
+}
+.depoimento-nome{
+    font-weight: 400;
+    font-size: 18px;
+}
+.item-depoimento img{
+    max-width: 180px;
+}
+
+/***************************************************/
+
+.mais-conteudo{
+    padding: 14vh 6vw;;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #F6F6F6;
+    gap: 8vh;
+}
+.mais-conteudo h1{
+    color:#2E948A;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 37px;
+}
+.conteudos{
+    display:flex;
+    align-items: center;   
+    justify-content: space-between;
+}
+.conteudo{
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    font-weight: 700;
+    color:#555555;
+    max-width: 320px;
+}
+.conteudo-img-cinza{
+    background-color: #C4C4C4;
+    max-width: 320px;
+    min-width: 120px;
+    max-height: 190px;
+    min-height: 200px;
+    margin-bottom: 2vh;
+}
+.conteudo h2{
+    color:#2E948A;
+    font-size: 27px;
+}
+.ir-todos-posts{
+    border-radius: 62px;
+    padding: 1vh 1vw;
+    border: 2px solid #FF4081;
+    color: #FF4081;
+    font-size: 25px;
+    font-family:'Ubuntu', sans-serif;
+    align-self: center;
+    font-weight: 400;
+}
+.ir-todos-posts:hover{
+    color: #fff;
+    background-color: #FF4081;
+    transition: 300ms;
+}
+/*****************************************************/
+footer{
+    background-color: #419488;
+    display: flex;
+    justify-content: space-between;
+    padding: 4vh 6vw;
+    align-items: center;
+}
+.nav-footer{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    justify-content: center;
+    gap: 2vh;
+}
+.item-foot{
+    color: #fff;
+}
+.footer-links{
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    justify-content: center;
+    align-items: center;
+}
+.footer-link{
+    width: 20vw;
+    border-radius: 62px;
+    padding: 1vh 1vw;
+    border: 2px solid #fff;
+    color: #ffff;
+    font-size: 20px;
+    font-family:'Ubuntu', sans-serif;
+    align-self: center;
+    
+    text-align: center;
+}
+.footer-link:hover{
+    color: #2E948A;
+    background-color: #fff;
+}
+.logo-footer{
+    max-width: 300px;
+}
+/***************************************CONTATOOOO**************/
+
+.contato{
+    display: flex;
+    padding: 16vh 8vw;
+    justify-content: center;
+    gap: 105px;
+    align-items: center;
+}
+.form-contato{
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    justify-content: space-between;
+}
+.form-contato h2{
+    color:#FF4081;
+    font-weight: 700;
+    font-size: 40px;
+    padding-bottom: 5vh;
+}
+.contato img{
+    width: 60%;
+    max-width: 444px;
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2vh;
+}
+.formulario input{
+    border-radius: 7px;
+    padding: 2vh;
+    font-size: 16px;
+    border:1px solid #686868;
+    font-family: 'Ubuntu', sans-serif;
+}
+.formulario button{
+    width: 10vw;
+    border-radius: 62px;
+    padding: 1vh 1vw;
+    cursor: pointer;
+    color: #fff;
+    border: 2px solid #FF4081;
+    background-color: #FF4081;
+    font-size: 25px;
+    font-family:'Ubuntu', sans-serif;
+    font-weight: 400;
+}
+.mensagem{
+    height: 40vh;
+}
+
+.formulario button:hover{
+    color: #fff;
+    background-color: #fff;
+    color:#FF4081;
+    border: 2px solid #FF4081;
+    transition: 300ms;
+}
+
+/*************************************************/
+@media (max-width:1280px){
+    .inicio img{
+        display:none;
+    }
+    .inicio-info{
+        width:100%;
+        justify-content: center;
+    }
+    .modal{
+        padding: 1vh;;
+    }
+    .fechar{
+        font-size: 20px;
+        border-radius: 25px;
+        width: 25px;
+    }
+    .modal-info{
+        flex-direction: column;
+    }
+    .modal-info img{
+        display:none;
+    }
+    .modal-texto{
+        width:100%;
+    }
+    .modal-texto p, li{
+        font-size:14px;
+        width: 100%;
+    }
+    .modal-texto h2{
+        font-size: 25px;
+    }
+    .link-para-aulas{
+        width: 60%;
+        font-size:14px;
+        align-self: center;
+    }
+    .cursos{
+        flex-wrap:wrap;
+        justify-content: center;
+        gap: 10vh;
+    }
+    .ir-para-cursos{
+        margin: 2vh;
+        padding: 2% 6%;
+    }
+    .mais-conteudo{
+        padding: 8vh 6vw;
+    }
+    .conteudos{
+        gap:2vw;
+    }
+    .ir-todos-posts{
+        font-size: 18px;
+    }
+    .conteudo p{
+        font-size: 14px;
+    }
+    .conteudo h2{
+        font-size:20px
+    }
+    .item-depoimento{
+        flex-direction: column;
+    }
+    .depoimentos{
+        padding: 8vh 6vw;
+    }
+    .depoimento{
+        width: 100%;
+        font-size: 14px;
+    }
+    .depoimento-nome{
+        font-size: 14px;
+    }
+    .item-depoimento img{
+        max-width: 110px;
+    }
+    .contato{
+        flex-direction: column;
+    }
+    .form-contato{
+        width: 100%;
+    }
+    .formulario{
+        gap: 5vh;
+    }
+    .contato img{
+        display: none;
+    }
+    .formulario button{
+        width: 50%;
+    }
+    .logo-footer{
+        max-width:200px;
+    }
+    .footer-links{
+        display:none;
+    }
+}
+
+@media (max-width: 500px){
+    .nav-header{display: none;}
+    .item-menu{
+        display:block;
+        width: 8vw;
+        align-self: center;
+    }
+    .inicio{
+        padding: 8vh 10vw;
+    }
+    .inicio-titulo p{
+        font-size: 40px;
+    }
+    .cursos{
+        flex-wrap:wrap;
+        gap: 8vh;
+        padding: 6vh 10vw;
+    }
+    .curso{
+        gap:1vh;
+    }
+    .depoimentos{
+        padding:6vh 10vw;
+    }
+    .depoimento{
+        font-size:14px;
+        line-height: 20px;
+        width: 100%;
+    }
+    .depoimento-info{
+        gap:2vh;
+    }
+    .item-depoimento{
+        gap:5vh;
+    }
+    .item-depoimento img{
+        width:20vw;
+    }
+    .depoimentos h3{
+        padding-bottom: 2vh;
+    }
+    .grid-depoimentos{
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 5vh;
+    }
+    .mais-conteudo{
+        gap:5vh;
+        padding: 6vh 10vw;
+    }
+    .conteudos{
+        flex-wrap:wrap;
+        gap: 5vh;
+        justify-content: center;
+    }
+    .mais-conteudo button{
+        width: 60vw;
+    }
+    .saber-mais{
+        width:80%;
+        align-self: center;
+    }
+
+}
