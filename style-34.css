@@ -1,0 +1,431 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Ubuntu";
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 8vh 10vw;
+
+
+}
+
+.titulo {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #2E948A;
+    padding: 4vh;
+    box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: space-between;
+
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+
+.itens {
+    display: flex;
+    gap: 1vw;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.botoes {
+    color: #fff;
+    display: flex;
+    justify-content: end;
+    font-weight: 700;
+    font-size: 2vw;
+    padding: 1vw;
+    text-transform: uppercase;
+
+}
+
+.cursos {
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.curso {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.direita {
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+    justify-content: center;
+    gap: 2vh;
+}
+
+.letra-rosa {
+    color: #FF4081;
+    font-size: 10vh;
+
+}
+
+.titulo p {
+    font-size: 20px;
+    color: #C4C4C4;
+}
+
+
+.xadrez {
+    width: 30vw;
+    max-height: 50vh;
+    padding: 3vh;
+
+}
+
+.titulo123 {
+    color: #FF4081;
+    font-size: 35px;
+    font-weight: 700;
+
+}
+
+.texto {
+    font-size: 18px;
+    font-weight: 300
+}
+
+
+
+
+.comecar {
+
+    border-radius: 62px;
+    padding: 1vh;
+    background-color: #419488;
+    color: #FFFFFF;
+    width: 20%;
+
+    border: none;
+}
+
+
+.independencia {
+    margin-top: 5vw;
+    margin-left: 2vw;
+}
+
+footer {
+    background-color: #2E948A;
+    display: flex;
+    justify-content: space-between;
+    padding: 4vh 6vw;
+    align-items: center;
+    margin-top: 6vw;
+}
+
+#linha1 {
+    width: 100%;
+}
+
+.nav-footer {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    justify-content: center;
+    gap: 2vh;
+}
+
+.item-foot {
+    color: #fff;
+    text-decoration:none;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-link {
+    width: 20vw;
+    border-radius: 62px;
+    padding: 1vh 1vw;
+    border: 2px solid #fff;
+    color: #ffff;
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    align-self: center;
+    background-color: #2E948A;
+    text-align: center;
+}
+
+.footer-link:hover {
+    color: #2E948A;
+    background-color: #fff;
+}
+
+.item-menu{
+    display:none;
+}
+
+
+.logo-footer {
+    max-width: 200px;
+}
+
+@media (max-width: 500px) {
+    .curso {
+        flex-direction: column;
+    }
+
+
+    
+    .xadrez{
+        width: 80%;
+    }
+    .comecar {
+        width: 60%;
+    }
+
+    .footer-link {
+
+        display: none;
+    }
+
+    .item-menu{
+        display: block;
+        width: 10vw;
+        height: 5vh;
+        align-self: center;
+        
+    }
+
+    .botoes{
+        display: none;
+    }
+
+    .cursos {
+        gap:2vw;
+
+    }
+}
+
+
+/*****************************************/
+
+.cima {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10vh 10vw;
+
+}
+
+
+#texto23 {
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    justify-content: center;
+    gap: 1vw;
+}
+
+.textopg4 {
+    font-size: 20px;
+    
+    font-weight: 300;
+}
+
+.video{width: 40%;
+    height: 260px;
+
+}
+
+.foto1{
+   
+    width: 30vw;
+}
+
+#investimento {
+    color: #FF4081;
+    font-size: 55px;
+    font-weight: 700;
+}
+
+
+.todo {
+    background-color: #F6F6F6;
+    padding: 4vw;
+    display: flex;
+    flex-direction: column;
+    gap: 20vh;
+}
+
+
+.parte1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.paragrafo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 33vw;
+}
+
+
+.aula {
+    color: #FF4081;
+    font-size: 4vw;
+}
+
+#linhapg4 {
+    position: relative;
+    width: 92vw;
+    height: 0;
+    left: 3vw;
+    top: 14vh;
+    background: #C4C4C4;
+}
+
+#linha1 {
+    width: 100%;
+}
+
+footer {
+    background-color: #2E948A;
+    display: flex;
+    justify-content: space-between;
+    padding: 4vh 6vw;
+    align-items: center;
+    margin-top: 6vw;
+}
+
+.nav-footer {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    justify-content: center;
+    gap: 2vh;
+   
+}
+
+.item-foot {
+    color: #fff;
+    text-decoration:none ;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    justify-content: center;
+    align-items: center
+    
+}
+
+.footer-link {
+    width: 20vw;
+    border-radius: 62px;
+    padding: 1vh 1vw;
+    border: 2px solid #fff;
+    color: #ffff;
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    align-self: center;
+    background-color: #2E948A;
+    text-align: center;
+    text-decoration:none ;
+}
+
+.footer-link hoover {
+    color: #2E948A;
+    background-color: #fff;
+}
+
+.logo-footer {
+    max-width: 200px;
+}
+
+
+
+@media (max-width: 500px) {
+    .cima {
+        flex-direction: column;
+        
+        
+    }
+    .item-menu{
+        display: block;
+        width: 10vw;
+        height: 5vh;
+        align-self: center;
+        
+    }
+
+    .itens{
+        display: none;
+
+    }
+
+    .parte1{
+        flex-direction: column;
+    }
+
+    #texto23{
+        width: 80%;
+    }
+
+    .paragrafo{
+        width: 80vw;
+    }
+
+    .aula{
+        
+        padding: 1vh;
+        font-size: 30px;
+    }
+
+    .foto1{
+        width: 70vw ;
+
+    }
+
+    .footer-link {
+
+    display: none;
+    }
+
+    .video{
+        width: 100%;
+    }
+
+    #investimento{
+        font-size: 30px;
+
+    }
+
+
+   
+    
+
+    
+
+}
