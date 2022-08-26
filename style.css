@@ -11,7 +11,7 @@ header{
     justify-content: space-between;
     background-color: #2E948A;
     box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.25);
-    padding: 4vh
+    padding: 2vh 5vw;
 }
 a{
     cursor: pointer;
@@ -21,7 +21,7 @@ a{
     display:none;
 }
 .logo{
-    max-width: 244px;
+    width: 20vw;
 }
 .nav-header{ 
     display: flex;
@@ -50,7 +50,7 @@ a{
     width:30vw;
 }
 .inicio img{
-    width: 40%;
+    width: 30vw;
     max-width: 500px;
 }
 .inicio-titulo{
@@ -108,7 +108,7 @@ a{
   .modal{
     width: 80%;
     position: relative;
-    margin: 5% auto;
+    margin: 2% auto;
     padding: 5vh 1vw;
     background: #fff;
     display:flex;
@@ -120,15 +120,15 @@ a{
     align-items:center;
     gap: 5vw;
     justify-content: space-between;
-    padding: 1% 5vw;
+    padding: 1vh 5vw;
   }
   .modal-info img{
-    width: 30vw
+    width: 25vw
   }
   .modal-texto{
     display:flex;
     flex-direction:column;
-    gap: 3vh;
+    gap: 2vh;
     width: 40vw;
   }
   .modal-texto h2{
@@ -139,7 +139,6 @@ a{
   .modal-texto p{
     font-size: 18px;
     font-weight: 300;
-    width: 75%;
   }
   .modal-texto li{
     font-size: 18px;
@@ -149,7 +148,7 @@ a{
   .link-para-aulas{
     background-color: #C4C4C4;
     border-radius: 79px;
-    width:35%;
+    width:40%;
     text-align: center;
     padding: 2vh;
     font-family:'Ubuntu', sans-serif;
@@ -279,7 +278,7 @@ a{
     background-color: #F6F6F6;
     gap: 8vh;
 }
-.mais-conteudo h1{
+.mais-conteudo h2{
     color:#2E948A;
     text-transform: uppercase;
     font-weight: 700;
@@ -306,7 +305,7 @@ a{
     min-height: 200px;
     margin-bottom: 2vh;
 }
-.conteudo h2{
+.conteudo h3{
     color:#2E948A;
     font-size: 27px;
 }
@@ -367,7 +366,7 @@ footer{
     background-color: #fff;
 }
 .logo-footer{
-    max-width: 300px;
+    width: 20vw;
 }
 /***************************************CONTATOOOO**************/
 
@@ -524,9 +523,6 @@ footer{
     .formulario button{
         width: 50%;
     }
-    .logo-footer{
-        max-width:200px;
-    }
     .footer-links{
         display:none;
     }
@@ -539,11 +535,32 @@ footer{
         width: 8vw;
         align-self: center;
     }
+    header{
+        padding: 3vh 4vw;
+    }
+    .logo, .logo-footer{
+        width: 50vw;
+    }
     .inicio{
         padding: 8vh 10vw;
     }
     .inicio-titulo p{
-        font-size: 40px;
+        font-size: 30px;
+    }
+    .inicio-texto-modal p{
+        font-size: 18px;
+    }
+    .saber-mais{
+        width:80%;
+        align-self: center;
+        font-size: 20px;
+        padding: 1vh;
+    }
+    .inicio-info{
+        gap: 4vh;
+    }
+    .inicio-texto-modal{
+        gap: 5vh;
     }
     .cursos{
         flex-wrap:wrap;
@@ -553,8 +570,19 @@ footer{
     .curso{
         gap:1vh;
     }
+    .curso h2{
+        font-size: 20px;
+    }
+    .curso p, .ir-para-cursos{
+        font-size: 16px;
+    }
+    .curso img{
+        height: 85%;
+        width: 100%;
+    }
     .depoimentos{
         padding:6vh 10vw;
+        gap: 2vh;
     }
     .depoimento{
         font-size:14px;
@@ -571,7 +599,8 @@ footer{
         width:20vw;
     }
     .depoimentos h3{
-        padding-bottom: 2vh;
+        padding-bottom: 3vh;
+        font-size: 25px;
     }
     .grid-depoimentos{
         grid-template-columns: repeat(1, 1fr);
@@ -589,9 +618,21 @@ footer{
     .mais-conteudo button{
         width: 60vw;
     }
-    .saber-mais{
-        width:80%;
-        align-self: center;
+
+    .item-foot, .ir-todos-posts {
+        font-size: 14px;
+    }
+    .conteudo p{
+        font-size: 12px;
+    }
+    .conteudo h3{
+        font-size: 16px;
+    }
+    .mais-conteudo h2{
+        font-size: 25px;
+    }
+    .conteudo-img-cinza{
+        min-height: 90px;
     }
 
 }
